@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scythians Roleplay Rules</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #1a1a1a; 
+            color: #f4f4f4; 
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.discordapp.com/attachments/1306041817736941641/1306344471235133440/banner.jpg?ex=67365398&is=67350218&hm=8e3cfc3235abd1760e5c97d70f1e307e73822b3a1f06cdc3e887e041110ba884&'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(51, 51, 51, 0.8); 
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #f77f00; 
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        h2, h3 {
+            color: #f4f4f4; 
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid #f77f00;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #f77f00; 
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+        h3:hover {
+            color: #d66c00; 
+        }
+        p, ul {
+            margin: 10px 0;
+            color: #f4f4f4; 
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .rule-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(68, 68, 68, 0.9); 
+            border-left: 5px solid #f77f00; 
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .toggle-content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background: rgba(68, 68, 68, 0.9); 
+            border-radius: 4px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .toggle-button {
+            cursor: pointer;
+            color: #f77f00; 
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .toggle-button:hover {
+            color: #d66c00; 
+        }
+        .btn {
+            background-color: #f77f00; 
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #d66c00; 
+        }
+    
+        /* Navigation bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #111; 
+            padding: 10px;
+            z-index: 100;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #f77f00;
+        }
+    
+        /* Logo */
+        .logo {
+            width: 150px;
+            margin: 10px auto;
+            display: block;
+        }
+    
+       
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+    
+       
+      
+    </style>
+    
+</head>
+<body>
+
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rules">Rules</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#donation">Donation</a></li>
+    </ul>
+</nav>
+
+
+<div style="text-align: center; margin-top: 20px;">
+    <img src="https://cdn.discordapp.com/attachments/1306041817736941641/1306325706426286230/logog.png?ex=6736421e&is=6734f09e&hm=d75e55f6e8e05ba256573b1cd858676870bebae5fbdaf31e05a1a824b0d23ac0&" alt="Scythians Logo" class="logo"> <!-- Replace 'your-logo-url.png' with the actual logo URL -->
+</div>
+
+
+<div class="container" id="home">
+    <h1>Scythians Roleplay Rules</h1>
+    <p><strong>Our Mission:</strong> To create a realistic roleplay experience. Players are encouraged to develop characters freely while adhering to our realism-focused guidelines.</p>
+    
+    <div class="rule-section">
+        <h2>Los Santos University Code of Conduct</h2>
+    
+        <h3 onclick="toggleContent('general-behavior')" class="toggle-button">General Behavior</h3>
+        <div id="general-behavior" class="toggle-content">
+            <ul>
+                <li><strong>Respect and Professionalism:</strong> All members must maintain respect and professionalism at all times, both within and outside the organization.</li>
+                <li><strong>Disorderly Conduct and Profanity:</strong> Actions involving profanity, abusive language, or immature behavior, whether verbal or physical, may result in disciplinary measures. These actions may include:</li>
+                <ul>
+                    <li>Verbal or Written Warnings: Issued for first-time incidents or minor infractions.</li>
+                    <li>Temporary Suspension: For recurring or more severe misconduct, individuals may be temporarily suspended from participating in university activities.</li>
+                    <li>Expulsion: Repeated offenses or actions causing significant harm to the community or institution may result in expulsion.</li>
+                </ul>
+            </ul>
+        </div>
+    
+        <h3 onclick="toggleContent('discipline-consequences')" class="toggle-button">Discipline and Consequences</h3>
+        <div id="discipline-consequences" class="toggle-content">
+            <ul>
+                <li><strong>Progressive Discipline:</strong> Disciplinary actions range from warnings to suspension, with severe or repeated violations potentially leading to expulsion.</li>
+            </ul>
+        </div>
+    
+        <h3 onclick="toggleContent('prohibited-substances')" class="toggle-button">Prohibited Substances and Weapons</h3>
+        <div id="prohibited-substances" class="toggle-content">
+            <ul>
+                <li><strong>Drugs and Weapons:</strong> The use of drugs or possession of weapons, including bladed items, is strictly prohibited.</li>
+            </ul>
+        </div>
+    
+        <h3 onclick="toggleContent('classroom-etiquette')" class="toggle-button">Classroom Etiquette</h3>
+        <div id="classroom-etiquette" class="toggle-content">
+            <ul>
+                <li><strong>Punctuality:</strong> Late arrivals should avoid disturbing the class and quietly request a tardy slip if necessary.</li>
+                <li><strong>Chain of Command:</strong> Follow the proper chain of command for communication and do not interfere with administrative tasks.</li>
+                <li><strong>Absences:</strong> Notify the administration in advance if you will be absent for an extended period.</li>
+            </ul>
+        </div>
+    
+        <h3 onclick="toggleContent('participation')" class="toggle-button">Participation</h3>
+        <div id="participation" class="toggle-content">
+            <ul>
+                <li><strong>Attendance and Engagement:</strong> Unannounced absences or prolonged inactivity may lead to disciplinary action or expulsion.</li>
+            </ul>
+        </div>
+    
+        <h3 onclick="toggleContent('reporting-issues')" class="toggle-button">Reporting Issues</h3>
+        <div id="reporting-issues" class="toggle-content">
+            <ul>
+                <li><strong>Filing Reports:</strong> Clearly outline your concerns or complaints, specifying the person involved (student, professor, staff member) and the nature of the issue (academic, behavioral, etc.). Reports should be directed to the appropriate university staff.</li>
+            </ul>
+        </div>
+    
+        <h3 onclick="toggleContent('cell-phone-use')" class="toggle-button">Use of Cell Phones</h3>
+        <div id="cell-phone-use" class="toggle-content">
+            <ul>
+                <li><strong>In-Class Restrictions:</strong> Cell phones are prohibited during class sessions and should not be used to cheat or leak information.</li>
+            </ul>
+        </div>
+    
+        <h3 onclick="toggleContent('dismissal-from-class')" class="toggle-button">Dismissal from Class</h3>
+        <div id="dismissal-from-class" class="toggle-content">
+            <ul>
+                <li><strong>Handling Class Expulsion:</strong> If asked to leave a class, approach the situation calmly. Seek to understand the reason from the professor, either during or after class, if appropriate. If there is a misunderstanding, you may respectfully contact the school administration for further assistance.</li>
+            </ul>
+        </div>
+    </div> 
+
+
+    <div class="rule-section" id="rules">
+        <h2>General Roleplay Rules</h2>
+        <ul>
+            <li>Keep roleplay scenes realistic. Engage in scenes that replicate real-life experiences.</li>
+            <li>Using game mechanics in bad faith to gain an upper hand is not allowed.</li>
+            <li>All players must give realistic roleplay to medical personnel and respond properly to /me actions.</li>
+            <li>“Fail Roleplay” means committing unrealistic acts, such as not roleplaying injuries after a crash.</li>
+            <li>Doing vocal RP while “down” should only be used to enhance the realism of the injury.</li>
+            <li>Players must emote using /me to increase the detail of roleplay scenes.</li>
+            <li>Players must initiate or have a storyline before jumping into conflict.</li>
+            <li>After an injury, your character may only recall details with assistance from medical staff or law enforcement.</li>
+            <li>Positive identification may not be done by voice.</li>
+            <li>Exploiting bugs or devices for personal gain is strictly prohibited.</li>
+           
+        </ul>
+    </div>
+
+    <div class="rule-section">
+        <h2>Roleplay Definitions</h2>
+    
+        <h3 onclick="toggleContent('meta-content')" class="toggle-button">Metagaming</h3>
+        <div id="meta-content" class="toggle-content">
+            <p>Using OOC knowledge in IC scenarios:</p>
+            <ul>
+                <li>Did you learn this information in-game?</li>
+                <li>Would your character know this?</li>
+                <li>Examples include using Discord-acquired info in character.</li>
+            </ul>
+        </div>
+        
+        <h3 onclick="toggleContent('power-content')" class="toggle-button">Powergaming</h3>
+        <div id="power-content" class="toggle-content">
+            <p>Forcing actions onto others without consent, often to achieve unrealistic outcomes.</p>
+        </div>
+    
+        <h3 onclick="toggleContent('value-content')" class="toggle-button">Value Life</h3>
+        <div id="value-content" class="toggle-content">
+            <p>Your character should avoid reckless behavior that endangers their life unrealistically.</p>
+        </div>
+    
+        <h3 onclick="toggleContent('rdm-content')" class="toggle-button">RDM/VDM</h3>
+        <div id="rdm-content" class="toggle-content">
+            <p><strong>RDM</strong>: Random Deathmatch - killing randomly | <strong>VDM</strong>: Vehicle Deathmatch - using vehicles as weapons.</p>
+        </div>
+    </div>
+
+   
+
+   
+
+
+    
+    
+  
+
+
+
+
+
+
+
+
+   <div class="rule-section" id="about-us">
+    <h2>About Us</h2>
+    <p>Scythians Roleplay is dedicated to providing an immersive and realistic experience for roleplay enthusiasts. We emphasize creativity, teamwork, and maintaining a balanced environment for all players.</p>
+    <h3>
+        <a href="https://discord.gg/hCYjbkwN84" target="_blank" class="discord-link">
+            <button style="background-color:#0070ba;color:white;padding:10px 20px;border:none;border-radius:5px;font-size:16px;">
+                JOIN US
+            </button>
+        </a>
+    </h3>
+</div>
+
+
+
+    
+
+<div class="rule-section" id="donation">
+    <h2>Support Us</h2>
+    <p>If you enjoy our content and would like to support us, feel free to make a donation via PayPal:</p>
+    <a href="https://paypal.me/massyneaazizi" target="_blank">
+        <button style="background-color:#0070ba;color:white;padding:10px 20px;border:none;border-radius:5px;font-size:16px;">
+            Donate via PayPal
+        </button>
+    </a>
+</div>
+
+
+</div>
+
+
+
+<script>
+function toggleContent(id) {
+    const content = document.getElementById(id);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        content.style.animation = "fadeIn 0.3s ease-in-out";
+    } else {
+        content.style.display = "none";
+        content.style.animation = "fadeOut 0.3s ease-in-out";
+    }
+}
+</script>
+
+
+
+<script>
+  
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+
+   
+    window.onscroll = function() {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
